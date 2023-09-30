@@ -10,10 +10,18 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			arr.sort((a,b) =>
+			if(arr.length == 0 || 1)
 			{
-				return b-a;
-			})
+				return -Infinity;
+			}
+			else
+			{
+				arr.sort((a,b) =>
+					{
+						return b-a;
+					})
+			}
+			
 				return arr[1];
 		}
 
